@@ -1,0 +1,9 @@
+/_build/
+/deps/
+/doc/
+*.ez
+*.beam
+/native/ex_strsim_nif/target/
+/priv/native/
+erl_crash.dump
+checksum-*.exs

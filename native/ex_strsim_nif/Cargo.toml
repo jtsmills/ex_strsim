@@ -1,0 +1,19 @@
+[package]
+name = "ex_strsim_nif"
+version = "0.1.0"
+edition = "2024"
+authors = ["Justin Mills"]
+publish = false
+
+[lib]
+name = "ex_strsim_nif"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.37"
+strsim = "0.11"
+
+[features]
+default = ["nif_version_2_16"]
+nif_version_2_16 = ["rustler/nif_version_2_16"]
+nif_version_2_17 = ["rustler/nif_version_2_17"]
